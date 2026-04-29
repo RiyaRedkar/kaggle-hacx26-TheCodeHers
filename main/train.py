@@ -3,6 +3,15 @@ from torchvision import datasets, transforms, models
 from torch import nn, optim
 from torch.utils.data import DataLoader
 import os
+import random
+import numpy as np
+
+torch.manual_seed(42)
+random.seed(42)
+np.random.seed(42)
+
+# NOTE:
+# Update DATA_DIR based on your local or Kaggle environment before running.
 
 # ========================
 # PATH (update if needed)
